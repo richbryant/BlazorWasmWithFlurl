@@ -1,7 +1,7 @@
 @page "/fetchdata"
 @using FlurlBlazor.Shared
 @using FlurlBlazor.Client.ApiServices
-@inject IWeatherForecastService Service
+
 
 <h1>Weather forecast</h1>
 
@@ -41,7 +41,7 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Service.Get();
+        forecasts = await ApiFunctions.GetWeatherForecasts();
     }
 
 }

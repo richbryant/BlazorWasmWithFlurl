@@ -6,14 +6,9 @@ using FlurlBlazor.Shared;
 
 namespace FlurlBlazor.Client.ApiServices
 {
-    public interface IWeatherForecastService
+    public static class ApiFunctions
     {
-        Task<List<WeatherForecast>> Get();
-    }
-
-    public class WeatherForecastService : IWeatherForecastService
-    {
-        public async Task<List<WeatherForecast>> Get()
+        public static async Task<List<WeatherForecast>> GetWeatherForecasts()
             => await WeatherForecasts.GetUrl
                 .GetJsonAsync<List<WeatherForecast>>()
                 .ConfigureAwait(false);

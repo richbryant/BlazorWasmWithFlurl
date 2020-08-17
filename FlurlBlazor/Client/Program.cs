@@ -1,8 +1,7 @@
 using System.Threading.Tasks;
 using Flurl.Http;
-using FlurlBlazor.Client.ApiServices;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.DependencyInjection;
+
 
 namespace FlurlBlazor.Client
 {
@@ -17,8 +16,6 @@ namespace FlurlBlazor.Client
             {
                 settings.HttpClientFactory = new BlazorHttpClientFactory();
             });
-
-            builder.Services.AddTransient<IWeatherForecastService, WeatherForecastService>();
 
             await builder.Build().RunAsync();
         }
