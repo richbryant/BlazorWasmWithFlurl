@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlurlBlazor.Server", "FlurlBlazor\Server\FlurlBlazor.Server.csproj", "{4BC6298D-A7DF-4A73-9091-383A0932274C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlurlBlazor.Server", "FlurlBlazor\Server\FlurlBlazor.Server.csproj", "{4BC6298D-A7DF-4A73-9091-383A0932274C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlurlBlazor.Client", "FlurlBlazor\Client\FlurlBlazor.Client.csproj", "{67ED555B-8F6C-4740-AC62-F612CF74C73B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlurlBlazor.Client", "FlurlBlazor\Client\FlurlBlazor.Client.csproj", "{67ED555B-8F6C-4740-AC62-F612CF74C73B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlurlBlazor.Shared", "FlurlBlazor\Shared\FlurlBlazor.Shared.csproj", "{8E9C1773-8D52-4AE8-86DD-F019838E9D2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlurlBlazor.Shared", "FlurlBlazor\Shared\FlurlBlazor.Shared.csproj", "{8E9C1773-8D52-4AE8-86DD-F019838E9D2E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
