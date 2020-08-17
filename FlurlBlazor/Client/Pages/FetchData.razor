@@ -41,7 +41,11 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await ApiFunctions.GetWeatherForecasts();
+        forecasts = await GetForecasts(ApiFunctions.GetWeatherForecasts);
     }
 
+    public Task<List<WeatherForecast>> GetForecasts(Func<Task<List<WeatherForecast>>> get)
+    {
+        return get();
+    }
 }
